@@ -1,0 +1,31 @@
+{
+  "name": "zadanie_15.5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel script.js --watch --out-file script-compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Majamaja17/zadanie_15.5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Majamaja17/zadanie_15.5/issues"
+  },
+  "homepage": "https://github.com/Majamaja17/zadanie_15.5#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-standalone": "^6.26.0",
+    "react": "^16.4.1",
+    "react-dom": "^15.6.2"
+  }
+}
