@@ -87,23 +87,24 @@ class Stopwatch extends React.Component {
     }
   }
 
-    render() {
+  render() {
     return (
-    <div className="container">
-      <nav className="controls">
-        <button className="button start" onClick={this.start}><i className="fa fa-play" aria-hidden="true"></i> Start</button>
-        <button className="button stop" onClick={this.stop}><i className="fa fa-pause" aria-hidden="true" ></i> Pause</button>
-        <button className="button reset" onClick={this.reset}><i className="fa fa-stop" aria-hidden="true"></i> Reset</button>
-      </nav>
-      <div className="stopwatch">
-       {this.state.display}
+      <div className="container">
+        <nav className="controls">
+          <button className="button start" onClick={this.start}><i className="fa fa-play" aria-hidden="true"></i> Start</button>
+          <button className="button stop" onClick={this.stop}><i className="fa fa-pause" aria-hidden="true" ></i> Pause</button>
+          <button className="button reset" onClick={this.reset}><i className="fa fa-stop" aria-hidden="true"></i> Reset</button>
+        </nav>
+        <div className="stopwatch">
+           {this.state.display}
+        </div>
+        <button className="button save" onClick={this.saveResult}><i className="fa fa-plus" aria-hidden="true"></i> Save Result</button>
+        <button className="button delete" onClick={this.delete}><i className="fa fa-trash" aria-hidden="true"></i> Delete Results</button>
+        <ul className="results">
+          {this.state.results.map((result, i) => <li key={i}>{result}</li>)}
+        </ul>
       </div>
-      <button className="button save" onClick={this.saveResult}><i className="fa fa-plus" aria-hidden="true"></i> Save Result</button>
-      <button className="button delete" onClick={this.delete}><i className="fa fa-trash" aria-hidden="true"></i> Delete Results</button>
-      <ul className="results">
-        {this.state.results.map((result, i) => <li key={i}>{result}</li>)}
-      </ul>
-    </div>);
+    );
   }
 }
 
